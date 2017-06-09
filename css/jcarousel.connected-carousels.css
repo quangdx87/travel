@@ -22,6 +22,7 @@
 
 .connected-carousels .navigation {
     position: relative;
+    padding-left: 0;
 }
 
 /** Shared carousel styles **/
@@ -96,6 +97,7 @@
 
 .connected-carousels .prev-stage span,
 .connected-carousels .next-stage span {
+        border: 1px solid #fff;
     display: none;
     position: absolute;
     top: 50%;

@@ -308,6 +308,9 @@
   }
 } 
 @media screen and (max-width:768px) {
+  .tab-style .tourlq .content, .tab-style .tourlq .content .row, .tab-style .tourlq .content .row .item {
+    padding: 0 10px;
+}
   .row1 {
     width: 100%;
     margin-bottom: 10px;
@@ -341,6 +344,9 @@
   }
 }
 @media screen and (max-width:567px) {
+  .tab-style .tourlq .content .row .item {
+    width: 100%;
+  }
 .row1 .item {
     width: 100%;
     margin-bottom: 10px;
