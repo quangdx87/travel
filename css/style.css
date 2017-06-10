@@ -20,6 +20,25 @@ a{
 	text-decoration: none;
 	outline: none!important;
 }
+
+table .header {
+    background-color: #E0DFDF;
+}
+table td {
+    height: 35px;
+}
+table .right {
+    text-align: right;
+}
+.b {
+	font-weight: bold;
+}
+.red{
+	color: #ed0000;
+}
+.yellow {
+ color: #edaa0a;
+}
 *, h1, h2, h3, h4, h5, h6{
 	font-family: Roboto;
 }
@@ -717,6 +736,7 @@ footer .copyright{
 	padding: 10px 25px;
 	font-weight: bold;
 	font-size: 13px;
+	text-transform: uppercase;
 }
 
 /* danh muc tour*/
@@ -1169,4 +1189,81 @@ footer .copyright{
 	width: 170px;
 	padding: 0;
 	margin: 20px 0;
+}
+
+/*thanh toan*/
+.box-tt {
+	margin-bottom: 20px;
+}
+.box-tt .header{
+	border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.box-tt div.header span{
+  background-color: #edaa0a;
+  padding: 0;
+  line-height: normal;
+  margin: 0;
+  padding: 10px 20px;
+	color: #111;
+  display: inline-block;
+  font-weight: bold;
+}
+.box-tt:first-child .header span{
+	color: #fff;
+}
+.box-tt .content{
+	margin: 10px 0;
+	color: #111;
+}
+.box-tt .content .title{
+	font-size: 18px;
+	margin: 10px 0;
+}
+.box-tt .content .btn-yellow{
+	margin-left: 20px;
+	color: #fff;
+	border-radius: 0;
+}
+.box-tt label {
+	padding-top: 7px;
+	color: #565656;
+	font-weight: normal;
+}
+.main_content .box-tt > .content .row {
+    margin-top: 0;
+}
+.box-tt .last > div  {
+    float: left;
+    margin-right: 10px;
+}
+.box-tt .last > div:last-child  {
+    margin-right: 0;
+}
+.box-tt .last > div .form-control {
+	width: 60px;
+  display: inline-block;
+}
+.box-tt .last > div label{
+    margin-right: 10px;
+}
+.box-tt table select{
+height: 24px;
+}
+.box-tt label.agreed {
+	display: inline-block;
+	color :#000;
+}
+.agreed input {
+	margin-right: 10px;
+}
+.mobile{
+	display: none;
+}
+.inline {
+	display: inline-block;
+	width: 130px;
+}
+.style2{
+	width: 200px;
 }
