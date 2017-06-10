@@ -1267,3 +1267,18 @@ height: 24px;
 .style2{
 	width: 200px;
 }
+.m10{
+	margin-bottom: 10px;
+}
+.thanks {
+	font-size: 20px;
+}
+.thanks {
+	font-size: 20px;
+}
+.no-radius{
+	border-radius: 0;
+}
+.scrolly {
+	overflow-y: scroll;
+}
