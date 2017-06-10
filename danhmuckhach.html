@@ -24,6 +24,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 
+<script src="js/slider.js"></script>
 <script src="js/custom.js"></script>
 </head>
 <body class="danhmuckhach">
@@ -51,6 +52,21 @@
     </header>
 
     <div id="main" role="main">
+      <div id="banner">
+        <div class="inner">
+          <!-- <div class="bg"></div> -->
+          <div class="slide"></div>
+          <div class="content">
+            <div class="container">
+              <h1 class="rb">Resort - Coffee tour</h1>
+              <h3>3 ngày 2 đêm khám phá nét đẹp thiên nhiên hùng vỹ cùng Coffee Tour Đặng Lê</h3>
+              <p>
+                <a class="btn rb" href="#">XEM CHI TIẾT</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div><!-- banner -->
 
       <div class="top-content">
         <div class="header">
@@ -217,6 +233,8 @@
             <a href="#" title=""> <span class="page-numbers">6</span> </a>
           </div>
 
+          <div class="line"></div>
+
         </div>
 
       </div><!-- main_content -->
@@ -294,5 +312,16 @@
     <a href="#" title="Scroll to Top" class="scrolltop">Scroll To Top</a>
   </div><!--wrapper-->
 
+<script type="text/javascript" >
+    $("#banner .slide").backgroundCycle({
+        imageUrls: [
+            'img/banner-2.jpg',
+            'img/banner-2.jpg'
+        ],
+        fadeSpeed: 2000,
+        duration: 3000,
+        backgroundSize: SCALING_MODE_COVER
+    });
+</script>
 </body>
 </html>
