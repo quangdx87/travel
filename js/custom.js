@@ -8,7 +8,9 @@ $(document).ready(function(){
     	$("#datepicker").datepicker();
 
     $(".close-btn").click(function() {
+      var height =  $(".showcase .col-1").height() - 6;
       $(".box-search").toggle();
+      $(".showcase .col-2").css({'width': '54%', 'height' : height, 'overflow' : 'hidden'});
     });
 
   	$("#open-menu").click(function() {

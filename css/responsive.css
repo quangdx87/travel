@@ -315,8 +315,36 @@
   .box-home h2 {
     padding: 0 20px;
   }
+
+  .avroom {
+    padding: 0;
+    border: none;
+  }
+  .sale-off strong {
+    padding: 7px;
+    font-size: 13px;
+  }
+
+  .sale-off i {
+    border-top: 12px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 15px solid #c40300;
+    top: 8px;
+  }
+  .sale-off span {
+    padding: 4px;
+    font-size: 14px;
+    padding-left: 30px;
+  }
 } 
 @media screen and (max-width:768px) {
+
+  ul.list li {
+    width: 48%;
+  }
+  .booking .price .sale-off{
+    display: none;
+  }
   .pc{
     display: none;
   }
@@ -365,40 +393,45 @@
 .footer-content .content-f{
   padding: 0 30px;
 }
+
+.box-tt .last > div {
+  float: none;
+  margin-right: 0;
+  margin-bottom: 10px;
+} 
+.box-tt .last > div label {
+  width: 30%;
 }
-@media screen and (max-width:567px) {
-  .box-tt .last > div {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 10px;
-  } 
-  .box-tt .last > div label {
-    width: 30%;
-  }
-  .tab-blue .tab-content {
+.tab-blue .tab-content {
+  width: 100%;
+}
+.tab-style .tourlq .content .row .item {
+  width: 100%;
+}
+.row1 .item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.box-home .col {
+  float: none;
+}
+#banner .inner .slide {
+  min-height: 330px;
+}
+#banner .inner h1 {
+  font-size: 25px;
+}
+#banner .inner h3 {
+  font-size: 15px;
+}
+#banner .inner .btn{
+  padding: 10px 30px;
+}
+
+}
+@media screen and (max-width:387px) {
+  ul.list li {
     width: 100%;
-  }
-  .tab-style .tourlq .content .row .item {
-    width: 100%;
-  }
-  .row1 .item {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .box-home .col {
-    float: none;
-  }
-  #banner .inner .slide {
-    min-height: 330px;
-  }
-  #banner .inner h1 {
-    font-size: 25px;
-  }
-  #banner .inner h3 {
-    font-size: 15px;
-  }
-  #banner .inner .btn{
-    padding: 10px 30px;
   }
 
 }
