@@ -1527,12 +1527,109 @@ input[type="radio"] {
 }
 .custom-page .tab-content .item {
 	margin-bottom: 20px;
+	position: relative;
 }
 .second-comment h4 {
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-    margin-bottom: 20px;
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: bold;
 }
 .custom-page .top-content .form-control {
-    border: 1px solid #cccccc;
+	border: 1px solid #cccccc;
+}
+.comment-title {
+	margin: 5px 0;
+}
+.desc {
+	color: #3f3f3f;
+	font-size: 12px;
+}
+.box-dl-lq .item{
+	margin-bottom: 10px;
+}
+.box-dl-lq .title{
+	font-size: 14px;
+}
+.box-dl-lq .old-price {
+	margin-top: 5px;
+	text-decoration: line-through;
+	color: #cecece;
+}
+.box-dl-lq .new-price {
+	color: #eeac34;
+}
+.btn-play {   
+	background: url(../img/btn-play.png) 0 0 no-repeat transparent;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.custom-page .item .inner{
+	position: relative;
+}
+.custom-page .item  .inner .info{
+	background-color: rgba(0, 0, 0, 0.25);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	padding: 10px 20px;
+}
+.custom-page .item  .inner .info .title{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.content-hover {
+	background-color: rgba(0, 0, 0, 0.25);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+	padding: 10px 20px;
+	display: none
+}
+.hover-effect:hover .content-hover {
+	display: block;
+}
+.hover-effect:hover .info {
+	display: none;
+}
+.content-hover .title{
+	text-transform: uppercase;
+	font-size: 14px;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.content-hover p{
+	font-size: 12px;
+}
+.content-hover-f {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	width: 100%;
+	padding: 0 20px;
+}
+.content-hover-f .pull-left a{
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #fffa6c;
+	padding-top: 12px;
+	display: block;
+}
+.content-hover-f .pull-right a {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #262625!important;
 }
