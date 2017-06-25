@@ -14,7 +14,7 @@
     /*width: 428px;*/
   }
   #banner .inner .slide {
-    min-height: 920px;
+    /*min-height: 920px;*/
   }
 }
 @media (max-width: 1700px) {
@@ -25,6 +25,22 @@
 
 
 @media screen and (max-width:1024px) {
+  .img-bg {
+/*    position: relative;
+    top: 83px;*/
+  }
+  .reverse .img-bg {
+    top: 0;
+}
+  .line-yellow-bottom {
+    left: 95px;
+  }
+  .line-yellow-bottom .line-2{
+    width: 86%;
+  }
+  .line-yellow-bottom {
+    display: none;
+  }
   .detail-travel .title {
     padding: 0 ;
   }
@@ -49,7 +65,7 @@
 }
 @media screen and (max-width:1000px) {
   #banner .inner .slide {
-    min-height: 430px;
+    /*min-height: 430px;*/
   }
   body .wrapper{
     left: 0 !important;
@@ -416,7 +432,7 @@
   float: none;
 }
 #banner .inner .slide {
-  min-height: 330px;
+  /*min-height: 330px;*/
 }
 #banner .inner h1 {
   font-size: 25px;

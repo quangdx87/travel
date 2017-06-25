@@ -374,7 +374,7 @@ ul.list li{
 	bottom: 0;
 }
 #banner .inner .slide {
-	min-height: 830px;
+	/*min-height: 830px;*/
 }
 #banner .inner .content {
 	text-align: center;
@@ -1408,6 +1408,9 @@ label.agreed {
 	vertical-align: middle;
 	background-color: transparent!important;
 }
+.f18 {
+	font-size: 18px;
+}
 .text-orange {
 	color :#edaa0a;
 	text-transform: uppercase;
@@ -1632,4 +1635,77 @@ input[type="radio"] {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #262625!important;
+}
+.dl-content {
+	color: #000;
+	margin-top: 10px;
+	text-align: justify;
+	font-weight: bold;
+}
+
+.main_content .detail-travel .tab-pane  {
+}
+.inner-dl{
+	padding-right: 20px;
+}
+.reverse .inner-dl {
+	padding-right: 0;
+}
+.inner-dl .title{
+	margin-bottom: 20px;
+	padding: 0;
+}
+.img-bg{
+	    max-width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	box-shadow: 1px 0px 0px 0px rgba(95, 79, 79, 0.67);
+}
+.line-row{
+	position: relative;
+	margin-bottom: 31px;
+
+}
+.line-yellow-bottom{
+	position: relative;
+	width: calc(100% - 110px);
+	bottom: 44px;
+	left: 110px;
+	font-size: 0;
+}
+
+.line-yellow-bottom .line-1{    
+	background: url(../img/line-1.png) left bottom repeat-y transparent;
+	width: 5px;
+	height: 80px;
+	display: inline-block;
+}
+.line-yellow-bottom .line-2{    
+	background: url(../img/line-2.png) left bottom repeat-x transparent;
+	height: 5px;
+	display: inline-block;
+	width: 85%;
+}
+.line-yellow-bottom .line-3{    
+	background: url(../img/line-1.png) left bottom repeat-y transparent;
+	width: 5px;
+	height: 80px;
+	display: inline-block;
+	position: relative;
+	top: 75px;
+}
+.reverse .line-yellow-bottom{
+	bottom: 0;
+	    left: 13%;
+}
+.reverse .line-yellow-bottom .line-3{    
+	top: 0;
+	display: block;
+}
+.reverse.line-row {
+	margin-bottom: 0;
+}
+
+.carousel-inner > .item > img{
+	width: 100%;
 }
