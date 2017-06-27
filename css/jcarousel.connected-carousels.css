@@ -52,21 +52,29 @@
 
 /** Navigation carousel specific styles **/
 
-.connected-carousels .carousel-navigation {
+.connected-carousels .carousel-navigation ul {
+    max-height: 400px;
+    overflow-y: auto;
+    max-width: 112px;
 }
 
 .connected-carousels .carousel-navigation li {
   cursor: pointer;
   float: none;
   margin-bottom: 20px;
+  position: relative;
+}
+.connected-carousels .carousel-navigation li:last-child {
+  margin-bottom: 0;
 }
 
 .connected-carousels .carousel-navigation li img {
   display: block;
 }
 
-.connected-carousels .carousel-navigation li.active img {
-
+.connected-carousels .carousel-navigation li.active {
+outline: 1px solid white;
+    outline-offset: -2px;
 }
 
 /** Stage carousel controls **/
@@ -177,4 +185,17 @@
       float: left;
       margin-right: 10px;
   }
+}
+.connected-carousels .carousel-navigation li.active:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.18);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…AiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+    background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0, rgba(255, 255, 255, 0.35)), color-stop(0.5, rgba(255, 255, 255, 0.35)), color-stop(0.51, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
+    background-image: -webkit-repeating-linear-gradient(bottom left, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+    background-image: repeating-linear-gradient(to top right, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
+    background-image: -ms-repeating-linear-gradient(bottom left, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0) 100%);
 }
