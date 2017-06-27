@@ -1623,9 +1623,9 @@ input[type="radio"] {
 	margin-top: 10px;
 }
 .content-hover p{
-    font-size: 12px;
-    max-height: 100px;
-    overflow: hidden;
+	font-size: 12px;
+	max-height: 100px;
+	overflow: hidden;
 }
 .content-hover-f {
 	position: absolute;
@@ -1651,6 +1651,8 @@ input[type="radio"] {
 	margin-top: 10px;
 	text-align: justify;
 	font-weight: bold;
+	height: 183px;
+	overflow: hidden;
 }
 
 .main_content .detail-travel .tab-pane  {
@@ -1720,7 +1722,7 @@ input[type="radio"] {
 	width: 100%;
 }
 #header.fixed {
-    position: fixed;
-    margin: 0 auto;
-    width: 100%;
+	position: fixed;
+	margin: 0 auto;
+	width: 100%;
 }
