@@ -24,7 +24,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/modernizr.min.js"></script>
 
-<script src="js/slider.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 </head>
 <body class="custom-page">
@@ -52,21 +52,51 @@
     </header>
 
     <div id="main" role="main">
-      <div id="banner">
-        <div class="inner">
-          <!-- <div class="bg"></div> -->
-          <div class="slide"></div>
-          <div class="content">
-            <div class="container">
-              <h1 class="rb">Resort - Coffee tour</h1>
-              <h3>3 ngày 2 đêm khám phá nét đẹp thiên nhiên hùng vỹ cùng Coffee Tour Đặng Lê</h3>
-              <p>
-                <a class="btn rb" href="#">BOOK TOUR</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div><!-- banner -->
+        <div id="banner">
+          <div class="inner">
+            <div class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+               <div class="item active">
+                 <img src="img/home/banner1.jpg" />
+                 <div class="content">
+                  <div class="container">
+                    <h1 class="rb">Thác Draynur - Coffee tour</h1>
+                    <h3>3 ngày 2 đêm khám phá nét đẹp thiên nhiên hùng vỹ cùng Coffee Tour Đặng Lê</h3>
+                    <p>
+                      <a class="btn rb" href="#">XEM CHI TIẾT</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+               <img src="img/banner-2.jpg" />
+                 <div class="content">
+                  <div class="container">
+                    <h1 class="rb">Thác Draynur - Coffee tour</h1>
+                    <h3>3 ngày 2 đêm khám phá nét đẹp thiên nhiên hùng vỹ cùng Coffee Tour Đặng Lê</h3>
+                    <p>
+                      <a class="btn rb" href="#">XEM CHI TIẾT</a>
+                    </p>
+                  </div>
+                </div>
+             </div>
+             <div class="item">
+               <img src="img/home/banner1.jpg" />
+                 <div class="content">
+                  <div class="container">
+                    <h1 class="rb">Thác Draynur - Coffee tour</h1>
+                    <h3>3 ngày 2 đêm khám phá nét đẹp thiên nhiên hùng vỹ cùng Coffee Tour Đặng Lê</h3>
+                    <p>
+                      <a class="btn rb" href="#">XEM CHI TIẾT</a>
+                    </p>
+                  </div>
+                </div>
+             </div>
+           </div>
+         </div>
+
+       </div>
+     </div><!-- banner -->
 
       <div class="top-content">
         <div class="header">
@@ -428,14 +458,11 @@
 <a href="#" title="Scroll to Top" class="scrolltop">Scroll To Top</a>
 
 <script type="text/javascript" >
-  $("#banner .slide").backgroundCycle({
-    imageUrls: [
-    'img/home/banner1.jpg',
-    'img/home/banner1.jpg'
-    ],
-    fadeSpeed: 2000,
-    duration: 3000,
-    backgroundSize: SCALING_MODE_COVER
+  $(document).ready(function(){
+    new WOW().init();
+    $('.carousel').carousel({
+      interval: false
+    })
   });
 </script>
 </body>
