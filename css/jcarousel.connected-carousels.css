@@ -192,7 +192,7 @@ outline: 1px solid white;
   }
 .connected-carousels .prev-stage,
 .connected-carousels .next-stage {
-display: none;
+/*display: none;*/
 }
 }
 .connected-carousels .carousel-navigation li.active:after {
