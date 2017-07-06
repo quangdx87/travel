@@ -70,26 +70,26 @@
             <div class="row">
               <div class="item col-md-7">
                 <div class="connected-carousels row">
-                  <div class="stage col-sm-10">
-                    <div class="carousel carousel-stage" data-jcarousel="true">
-                      <ul style="left: 0px; top: 0px;">
-                        <li><img src="img/h4.jpg" width="600" height="400" alt=""></li>
-                        <li><img src="img/h4.jpg" width="600" height="400" alt=""></li>
-                        <li><img src="img/h4.jpg" width="600" height="400" alt=""></li>
-                        <li><img src="img/h4.jpg" width="600" height="400" alt=""></li>
+                  <div id="slider" class="stage col-sm-10">
+                    <div class="carousel carousel-stage">
+                      <ul>
+                        <li><img src="img/h4.jpg" width="563" height="400" alt=""></li>
+                        <li><img src="img/h4.jpg" width="563" height="400" alt=""></li>
+                        <li><img src="img/h4.jpg" width="563" height="400" alt=""></li>
+                        <li><img src="img/h4.jpg" width="563" height="400" alt=""></li>
                       </ul>
                     </div>
-                    <a href="#" class="prev prev-stage inactive" data-jcarouselcontrol="true"><span>‹</span></a>
-                    <a href="#" class="next next-stage" data-jcarouselcontrol="true"><span>›</span></a>
+                    <a href="#" data-slide="prev" class="prev prev-stage inactive"><span>‹</span></a>
+                    <a href="#" data-slide="next" class="next next-stage"><span>›</span></a>
                   </div>
 
                   <div class="navigation col-sm-2">
-                    <div class="carousel carousel-navigation" data-jcarousel="true">
-                      <ul style="left: 0px; top: 0px;">
-                        <li data-jcarouselcontrol="true" class="active"><img src="img/h4.jpg" width="132" height="85" alt=""></li>
-                        <li data-jcarouselcontrol="true"><img src="img/h4.jpg" width="132" height="85" alt=""></li>
-                        <li data-jcarouselcontrol="true"><img src="img/h4.jpg" width="132" height="85" alt=""></li>
-                        <li data-jcarouselcontrol="true"><img src="img/h4.jpg" width="132" height="85" alt=""></li>
+                    <div class="carousel carousel-navigation">
+                      <ul>
+                        <li class="active"><img src="img/h4.jpg" width="132" height="85" alt=""></li>
+                        <li><img src="img/h4.jpg" width="132" height="85" alt=""></li>
+                        <li><img src="img/h4.jpg" width="132" height="85" alt=""></li>
+                        <li><img src="img/h4.jpg" width="132" height="85" alt=""></li>
                       </ul>
                     </div>
                   </div>
@@ -163,7 +163,7 @@
                     <tbody>
                       <tr>
                         <td>
-                        <p class="text-orange">standard</p>
+                          <p class="text-orange">standard</p>
                           <img src="img/sample1.jpg" width="220" height="100">
                           <p>Hướng: Hướng phố</p>
                           <p>Loại giường: 1 Giường đôi</p>
@@ -189,7 +189,7 @@
                       </tr>
                       <tr>
                         <td>
-                        <p class="text-orange">standard</p>
+                          <p class="text-orange">standard</p>
                           <img src="img/sample1.jpg" width="220" height="100">
                           <p>Hướng: Hướng phố</p>
                           <p>Loại giường: 1 Giường đôi</p>
@@ -213,7 +213,7 @@
                       </tr>
                       <tr>
                         <td>
-                        <p class="text-orange">standard</p>
+                          <p class="text-orange">standard</p>
                           <img src="img/sample1.jpg" width="220" height="100">
                           <p>Hướng: Hướng phố</p>
                           <p>Loại giường: 1 Giường đôi</p>
@@ -465,5 +465,25 @@
                 <a href="#" title="Scroll to Top" class="scrolltop">Scroll To Top</a>
               </div><!--wrapper-->
 
-            </body>
-            </html>
+              <script type="text/javascript">
+//add swipe to slider
+$(".carousel").on("touchstart", function(event){
+
+  var xClick = event.originalEvent.touches[0].pageX;
+  $(this).one("touchmove", function(event){
+    var xMove = event.originalEvent.touches[0].pageX;
+    if( Math.floor(xClick - xMove) > 5 ){
+      $(".carousel").carousel('next');
+    }
+    else if( Math.floor(xClick - xMove) < -5 ){
+      $(".carousel").carousel('prev');
+    }
+  });
+  $(".carousel").on("touchend", function(){
+    $(this).off("touchmove");
+  });
+});
+</script>
+</body>
+
+</html>

@@ -58,6 +58,7 @@
     max-width: 112px;
 }
 
+
 .connected-carousels .carousel-navigation li {
   cursor: pointer;
   float: none;
@@ -180,11 +181,19 @@ outline: 1px solid white;
 @media screen and (max-width:768px) {
   .connected-carousels .navigation {
     padding-left: 10px;
+    display: none;
   }
   .connected-carousels .carousel-navigation li {
       float: left;
       margin-right: 10px;
   }
+  .connected-carousels .carousel-navigation ul {
+    max-width: 100%;
+  }
+.connected-carousels .prev-stage,
+.connected-carousels .next-stage {
+display: none;
+}
 }
 .connected-carousels .carousel-navigation li.active:after {
     content: '';
