@@ -27,41 +27,41 @@
 @media screen and (max-width:1024px) {
   .img-bg {
 /*    position: relative;
-    top: 83px;*/
-  }
-  .reverse .img-bg {
-    top: 0;
+top: 83px;*/
 }
-  .line-yellow-bottom {
-    left: 95px;
-  }
-  .line-yellow-bottom .line-2{
-    width: 86%;
-  }
-  .line-yellow-bottom {
-    display: none;
-  }
-  .detail-travel .title {
-    padding: 0 ;
-  }
-  .info-travel {
-    padding: 0 ;
-  }
-  .main_content .item {
-    margin-bottom: 10px;
-  }
-  .row1 {
-    width: 85%;
-  }
-  #main-content {
-    margin-top: 75px;
-  }
-  .box-home .row{
-    margin: 0;
-  }
-  .showcase .row {
-    margin: 5px;
-  }
+.reverse .img-bg {
+  top: 0;
+}
+.line-yellow-bottom {
+  left: 95px;
+}
+.line-yellow-bottom .line-2{
+  width: 86%;
+}
+.line-yellow-bottom {
+  display: none;
+}
+.detail-travel .title {
+  padding: 0 ;
+}
+.info-travel {
+  padding: 0 ;
+}
+.main_content .item {
+  margin-bottom: 10px;
+}
+.row1 {
+  width: 85%;
+}
+#main-content {
+  margin-top: 75px;
+}
+.box-home .row{
+  margin: 0;
+}
+.showcase .row {
+  margin: 5px;
+}
 }
 @media screen and (max-width:1000px) {
   #banner .inner .slide {
@@ -99,6 +99,14 @@
     width: 100%;  
     padding: 0;
     display: none;
+  }
+
+  #menu,
+  #menu ul,
+  #menu ul li,
+  #menu ul li a,
+  #menu #head-mobile {
+    overflow: visible;
   }
 
   body.menu-open #menu ul {
