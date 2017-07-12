@@ -1,5 +1,14 @@
 //menu 
 $(document).ready(function(){
+  var heightCol =  $(".showcase .col-1").height() - 1 ;
+  $(".showcase .col-2").css({'height' : heightCol, 'overflow' : 'hidden'});
+
+  $( window ).resize(function() {
+   var heightCol =  $(".showcase .col-1").height() - 1 ;
+   $(".showcase .col-2").css({'height' : heightCol, 'overflow' : 'hidden'});
+ });
+  
+  $(".showcase .col-2").css({'width': '54%', 'height' : height, 'overflow' : 'hidden'});
   $('.scrolltop').click(function() {
     $('html, body').animate({scrollTop: 0}, 800);
     return false;
@@ -16,7 +25,6 @@ $(document).ready(function(){
   $("#open-menu").click(function() {
     $("body").toggleClass('menu-open');
   });
-
 
   $(window).scroll(function(){
     var sticky = $('#header'),
